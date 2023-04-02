@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: transparent;
+    font-size: 120%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+       
+    
+    body.clear-sky {
+    background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7728.jpg?w=1380&t=st=1680467498~exp=1680468098~hmac=f37c92f778fb2ce2608f2ff6b47f83cd4a6189a2a32b7ba258ffceb8a6760a1c');
+    }
+    
+    body.cloudy {
+    background-image: url('https://img.freepik.com/free-photo/beautiful-mountains_181624-389.jpg?w=740&t=st=1680467437~exp=1680468037~hmac=dcf7ec4e01836ea07a8a709e4189d4c7d58fa44a940372e2f716ffb355435084');
+    }
+    
+    body.rainy {
+    background-image: url('https://img.freepik.com/free-photo/weather-effects-composition_23-2149853295.jpg?w=1380&t=st=1680467587~exp=1680468187~hmac=d57434f983ff518ad71d92f69be424fb2d66063489960ed42b068a44fb0');
+    }
+  
+  
+  .card {
+    background:transparent;
+    color: black;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: aliceblue;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: aliceblue;
+    color: black;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+  }
+  
+  button:hover {
+    background: #0653616b;
+  }
+  
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
