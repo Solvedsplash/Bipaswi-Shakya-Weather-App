@@ -43,16 +43,17 @@ const weather = {
     },
     setBackground: function (condition) {
       const body = document.querySelector("body");
-      body.classList.remove("clear-sky", "cloudy", "rainy",);
+      body.classList.remove("clear-sky", "cloudy", "rainy","mist");
       if (condition === "Clear") {
         body.classList.add("clear-sky");
       } else if (condition === "Clouds") {
         body.classList.add("cloudy");
       }else if (condition === "Mist") {
-        body.classList.add("cloudy");
+        body.classList.add("mist");
       } else if (condition === "Rain") {
         body.classList.add("rainy");
       }
+      
     },
   };
   

@@ -1,6 +1,6 @@
 body {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0px;
@@ -13,26 +13,32 @@ body {
        
     
     body.clear-sky {
-    background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7728.jpg?w=1380&t=st=1680467498~exp=1680468098~hmac=f37c92f778fb2ce2608f2ff6b47f83cd4a6189a2a32b7ba258ffceb8a6760a1c');
+    background-image: url('https://images.unsplash.com/photo-1558418294-9da149757efe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
     }
-    
+ 
     body.cloudy {
-    background-image: url('https://img.freepik.com/free-photo/beautiful-mountains_181624-389.jpg?w=740&t=st=1680467437~exp=1680468037~hmac=dcf7ec4e01836ea07a8a709e4189d4c7d58fa44a940372e2f716ffb355435084');
+    background-image: url('https://images.unsplash.com/photo-1594156596782-656c93e4d504?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80');
     }
     
     body.rainy {
-    background-image: url('https://img.freepik.com/free-photo/weather-effects-composition_23-2149853295.jpg?w=1380&t=st=1680467587~exp=1680468187~hmac=d57434f983ff518ad71d92f69be424fb2d66063489960ed42b068a44fb0');
+    background-image: url('https://images.unsplash.com/photo-1603321544554-f416a9a11fcf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+    }
+     
+    body.mist {
+    background-image: url('https://images.unsplash.com/photo-1603794052293-650dbdeef72c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80');
     }
   
   
   .card {
-    background:transparent;
-    color: rgb(32, 34, 68);
+    background-color: rgba(26, 25, 25, 0.30);
+    color:#EFEFEF;
     padding: 4em;
     border-radius: 35px;
     width: 100%;
     max-width: 540px;
     margin: 2em;
+    border-radius: 15px;
+
   }
   
   .search {
@@ -59,13 +65,20 @@ body {
     outline: none;
     padding: 0.4em 1em;
     border-radius: 30px;
-    background: aliceblue;
-    color: black;
+    background: transparent;
     font-family: inherit;
     font-size: 110%;
-    width: calc(100% - 100px);
+    text-align: center;
+    width: 200px;
+    transition: 0.4s ease-in;
   }
-  
+::placeholder{
+  color:#EFEFEF
+}
+  input.search-bar:focus{
+    background-color: aliceblue;
+    width: 500px;
+  }
   button:hover {
     background: #0653616b;
   }
